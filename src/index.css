@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    height: -webkit-fill-available;
+  }
+
+  body {
+    @apply antialiased min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white;
+    min-height: -webkit-fill-available;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Ensure proper theme transitions */
+  *, *::before, *::after {
+    @apply transition-colors duration-200;
+  }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 640px) {
+  .fixed {
+    position: fixed !important;
+  }
+
+  .sticky {
+    position: sticky !important;
+  }
+
+  /* Improve tap targets */
+  button, 
+  a, 
+  input, 
+  select {
+    @apply min-h-[44px] min-w-[44px] px-3;
+  }
+
+  /* Better spacing for mobile forms */
+  input, 
+  select, 
+  textarea {
+    @apply text-base;
+    font-size: 16px !important; /* Prevent zoom on iOS */
+  }
+}
+
+/* Dark mode improvements */
+.dark {
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+  }
+}
+
+/* Mobile touch feedback */
+@media (hover: none) {
+  .hover\:bg-gray-50:active {
+    @apply bg-gray-100;
+  }
+  
+  .dark .hover\:bg-gray-800:active {
+    @apply bg-gray-700;
+  }
+
+  /* Improve touch feedback */
+  button:active,
+  a:active {
+    @apply opacity-70;
+  }
+}
+
+/* Safe area insets support */
+@supports(padding: max(0px)) {
+  body {
+    padding-left: min(0vmin, env(safe-area-inset-left));
+    padding-right: min(0vmin, env(safe-area-inset-right));
+    padding-bottom: min(0vmin, env(safe-area-inset-bottom));
+    padding-top: min(0vmin, env(safe-area-inset-top));
+  }
+}

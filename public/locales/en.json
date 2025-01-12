@@ -1,0 +1,101 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Operation successful",
+    "confirm": "Confirm"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "email": "Email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "forgotPassword": "Forgot password",
+    "noAccount": "Don't have an account? Sign up",
+    "hasAccount": "Already have an account? Sign in"
+  },
+  "dashboard": {
+    "title": "Subscription Tracker",
+    "subtitle": "Welcome back | Manage and monitor your subscriptions in one place",
+    "monthlyTotal": "Monthly Total",
+    "activeSubscriptions": "Active Subscriptions",
+    "categories": "Categories",
+    "upcomingRenewals": "Upcoming Renewals",
+    "noUpcomingRenewals": "No upcoming renewals in the next 30 days",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "inDays": "In {count} days"
+  },
+  "subscriptions": {
+    "add": "Add Subscription",
+    "edit": "Edit Subscription",
+    "delete": "Delete Subscription",
+    "serviceName": "Service Name",
+    "cost": "Cost",
+    "currency": "Currency",
+    "billingCycle": "Billing Cycle",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "category": "Category",
+    "paymentMethod": "Payment Method",
+    "nextBilling": "Next Billing",
+    "search": "Search subscriptions...",
+    "confirmDelete": "Are you sure you want to delete this subscription?"
+  },
+  "categories": {
+    "title": "Categories",
+    "streaming": "Streaming",
+    "software": "Software",
+    "gaming": "Gaming",
+    "other": "Other",
+    "all": "All Categories"
+  },
+  "charts": {
+    "spendingByCategory": "Spending by Category",
+    "monthlySpending": "Monthly Spending",
+    "billingCycle": "Billing Cycle Distribution"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": {
+      "title": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "language": {
+      "title": "Language",
+      "en": "English",
+      "hu": "Magyar"
+    },
+    "branding": {
+      "title": "Customization",
+      "appName": "App Name",
+      "logo": "Logo",
+      "colors": "Colors",
+      "primaryColor": "Primary Color",
+      "secondaryColor": "Secondary Color",
+      "accentColor": "Accent Color"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "enabled": "Enable notifications"
+    }
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "passwordMismatch": "Passwords do not match",
+    "invalidAmount": "Invalid amount",
+    "networkError": "Network error occurred",
+    "unauthorized": "You are not authorized to perform this action"
+  }
+}

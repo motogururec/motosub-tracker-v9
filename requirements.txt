@@ -1,0 +1,50 @@
+# System Requirements
+node >= 20.11.0
+npm >= 10.2.4
+
+# Container Requirements
+docker >= 25.0.0
+docker-compose >= 2.24.0
+nginx >= 1.25.3
+
+# Runtime Dependencies
+node-runtime >= 20.11.0
+nginx-runtime >= 1.25.3
+
+# Security Requirements
+- Non-root user execution
+- Read-only container filesystem
+- No privileged access
+- Memory limits enforced
+- CPU limits enforced
+- Health checks enabled
+- Logging rotation enabled
+- Regular security updates
+- HTTPS enforced
+- Content Security Policy
+- XSS protection
+- CSRF protection
+
+# Development Tools
+git >= 2.43.0
+typescript >= 5.3.3
+vite >= 5.0.12
+eslint >= 8.56.0
+prettier >= 3.2.4
+
+# Monitoring Tools
+curl >= 8.5.0
+jq >= 1.7.1
+
+# Node.js Dependencies
+See package.json for detailed Node.js package versions
+
+# Security Notes
+- All dependencies must be regularly updated
+- Security patches must be applied promptly
+- Container runs as non-root user
+- Filesystem is read-only in production
+- Environment variables required for configuration
+- Proper access control implemented
+- Data encryption in transit and at rest
+- Regular security audits required
